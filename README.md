@@ -1,3 +1,39 @@
+# DBMS Final Project: Online Bookstore
+
+This is a tiny online C2C bookstore system using MongoDB and PostgreSQL. Users, stores, and new orders are stored in PostgreSQL database. Books and history orders are stored in MongoDB database. Other than the basic functions mention below, recommandation and OCR are also included in this project. Codes are under **be** and **fe** directories.
+
+Here follows the description of the project:
+
+Implement a website backend that provides online book purchasing functionality.
+The website allows booksellers to open stores on it, and buyers may purchase through the website.
+Both buyers and sellers can register their own accounts.
+A seller can open one or more online stores, and buyers can recharge their accounts and purchase books in any store.
+Support the order->payment->delivery->receipt process.
+
+1. Implement the functions of the corresponding interface, see the .md file description under the doc (60% score)
+
+These include:
+
+1) User permission interface, such as registration, login, logout, and logout
+
+2) Buyer user interface, such as recharge, order, and payment
+
+3) Seller user interface, such as creating a store, adding book information and descriptions, and adding inventory
+Through the corresponding functional test, all test cases pass
+Test the performance of the two interfaces for ordering and payment (it is best to separate load generation and backend), and measure the number of supported transactions per minute, latency, etc.
+
+2. Add other functions to the project: (40% score)
+
+1) Implement subsequent processes
+Shipping -> Receiving
+
+2) Search books
+Users can search through keywords and parameterized search methods; for example, the search scope includes, title, tag, directory, content; full site search or current store search. If the displayed results are large, paging is required (use full-text index to optimize search)
+
+3) Order status, order inquiry and order cancellation
+Users can check their own historical orders, and users can also cancel orders.
+Cancel the order (optional, extra points +5~10), the buyer proactively cancels the order. If the buyer places the order and times out, if the buyer fails to pay, the order will be automatically canceled.
+
 # 数据管理系统作业——Bookstore实验报告
 
 | 课程名称：当代数据管理系统 | 项目名称：bookstore   | 指导老师：周烜 |
